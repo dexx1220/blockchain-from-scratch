@@ -1,0 +1,13 @@
+{
+  "name": "blockchain-from-scratch",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev-test": "nodemon dev-test"
+  },
+  "dependencies": {
+    "crypto-js": "^3.1.9-1",
+    "nodemon": "^1.17.3"
+  }
+}
