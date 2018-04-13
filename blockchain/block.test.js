@@ -22,10 +22,10 @@ describe('Block', () => {
   })
 
   it('lowers the difficulty for slowly mined blocks', () => {
-    expect(Block.adjustDifficulty(lastBlock, block.timestamp + 360000)).toEqual(lastBlock.difficulty - 1)
+    expect(Block.adjustDifficulty(block, block.timestamp + 360000)).toEqual(block.difficulty - 1)
   })
 
   it('raises the difficulty for quickly mined blocks', () => {
-    expect(Block.adjustDifficulty(lastBlock, block.timestamp / block.timestamp)).toEqual(lastBlock.difficulty + 1)
+    expect(Block.adjustDifficulty(block, block.timestamp / block.timestamp)).toEqual(block.difficulty + 1)
   })
 })
